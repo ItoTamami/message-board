@@ -1,14 +1,16 @@
-<!-- <h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p> -->
-
-<!-- ##5.8 メッセージ一覧の表示　で追記 ここから -->
-<h1>メッセージ一覧</h1>
-<% @messages.each do |message| %>
-  名前:<%= message.name %>
-  内容:<%= message.body %>
-  <br>
-<% end %>
-<!-- ##5.8 メッセージ一覧の表示　で追記　ここまで -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    メッセージ一覧
+  </div>
+    
+  <div class="panel-body">
+    <% @messages.each do |message| %>
+      <span class="label label-info"><%= message.name %></span>
+      <%= message.body %>
+      <br>
+    <% end %>
+  </div>
+</div>
 
 <%= form_for(Message.new) do |f| %>
   名前:
@@ -16,5 +18,5 @@
 
   内容:
   <%= f.text_field :body %>
-  <%= f.submit %>
+  <%= f.submit class: "btn btn-sm btn-primary" %>
 <% end %>
