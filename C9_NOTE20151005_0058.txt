@@ -1,0 +1,5 @@
+Script started on Mon 05 Oct 2015 12:58:10 AM UTC
+[01;32mitotamami@techacademy[00m:[01;34m~/workspace/message-board[00m (challenge1) $ exit
+exit
+
+Script done on Mon 05 Oct 2015 12:58:26 AM UTC
