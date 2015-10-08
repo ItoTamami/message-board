@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
 
   ## ここから追記
   def create
-	binding.pry
+#	binding.pry
     @message = Message.new(message_params)
   #  @message.save
   #  redirect_to root_path , notice: 'メッセージを保存しました'
